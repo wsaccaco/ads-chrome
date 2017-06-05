@@ -1,0 +1,71 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        margin: 0;
+      }
+      .wrap-debug{
+        min-width: 150px;
+        margin: 0 5px 5px;
+      }
+      .title-debug{
+        margin: 5px 10px;
+      }
+      .btn{
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.25;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .35em 1rem;
+        font-size: 0.95em;
+        width: 100%;
+        border-radius: .25rem;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+      }
+      .btn-default{
+        color: #292b2c;
+        background-color: #fff;
+        border-color: #ccc;
+      }
+      .food-debug{
+        font-size: 0.54em;
+        margin-top: 5px;
+        text-align: right;
+      }
+    </style>
+
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="wrap-debug">
+      <div class="title-debug">
+        <img src="img/logo_elcomercio.png" />
+      </div>
+      <div class="body-debug">
+        <button type="button" class="btn btn-default" id="toggle">Loading..</button>
+      </div>
+      <div class="food-debug">
+        <span>developed by El Comercio - w.saccaco</span>
+      </div>
+    </div>
+  </body>
+</html>
+

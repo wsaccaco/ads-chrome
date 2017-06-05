@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "debugging position ads",
+  "description": "This extension shows a position of ads in a current page",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": {
+      "16": "icon.png",
+      "24": "icon48.png",
+      "32": "icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": ["accessible_script.js", "toggle.js"],
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "activeTab",
+    "*://*/*"
+  ]
+}
